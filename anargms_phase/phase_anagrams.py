@@ -1,22 +1,4 @@
 
-#psedo code
-
-# 1. load the dictonary
-# 2. get the user name
-# 3. while loop len(phase) < len(user_name)
-# 3. find the anargms from the given name and word list
-# 4. showing the anargms
-# 5. asking the user choice
-# 6. if yes then get the choice
-# 7. checking the choice is right
-# 8. return the choice and remaining name
-# 9. add the choice to the phase
-# 10. if len(phase) is equal to len(user_name)
-# 11.    Then it is completed showing the final phase
-# 12. ask user for tryagain or exist.
-
-
-
 """ creating the anagram phase from name with user choice"""
 
 import sys
