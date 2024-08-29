@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+
+
+      .pricing-container{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        position: relative;
+        gap: 2rem;
+        
+
+      }
+
+      .pricing-plan{
+        flex:1;
+        text-align: center;
+        max-width: 200px;
+        box-shadow: 0px 0px 10px 10px rgba(111, 107, 107, 0.5);   
+        padding: 20px ;
+        background-color: white;
+        border-radius: 15px;
+        
+        
+      }
+
+      button{
+        background-color: gray;
+        color: white;
+    
+        
+        padding: 10px;
+        width: 120px;
+        border-radius: 15px;
+        border:none;
+        font-size: 15px;
+      }
+
+       .button-c{
+        position: relative;
+        top: 36px;
+      } 
+
+      .plan-features {
+        list-style: none;
+        font-size: small;
+        padding: 0%;
+        margin: none;
+        margin-bottom: 10px;
+      }
+
+      li {
+        padding-top:10px;
+        padding-bottom: 10px;
+      }
+      
+      .plan-title{
+
+        font-weight: 500;
+        padding-top:20px;
+        font-size: 1rem;
+      }
+       
+      .plan-price{
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom:10px;
+        font-size: 1.5rem;
+      }
+
+      p{
+        font-size: small;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+
+        .pricing-container{
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price"><span style="font-size: medium; font-weight: lighter;">$</span>9.99</div>
+        <p class="description">
+          vulputate, lacus. <span style="color: grey;">Cras interdum.</span> Nunc sollicitudin commodo.
+        </p>
+        <ul class="plan-features">
+          <li>📦 10GB Storage</li>
+          <li>🧑🏻‍💻 1 User</li>
+          <li><span style="opacity: 20%;">📞 Support</span></li>
+        </ul>
+        <div class="button-c">
+          <button class="plan-button">Buy Now</button>
+        </div>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price"><span style="font-size: medium; font-weight: lighter;">$</span>19.99</div>
+        <p class="description"> lorem ipsum sodales purus, in molestie tortor nibh sit amet ipsum. <span style="color: rgb(17, 177, 124);">Suspendisse non</span></p>
+        
+        
+        <ul class="plan-features">
+          <li>📦 50GB Storage</li>
+          <li>🧑🏻‍💻 5 Users</li>
+          <li>📞 Phone &amp; Email Support</li>
+        </ul>
+        <div class = "button-c">
+          <button class="plan-button" style="background-color: rgb(17, 177, 124);">Buy Now</button>
+        </div>
+        
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price"><span style="font-size: medium; font-weight: lighter;">$</span>49.99</div>
+        <p class="description">pede <span style="color: red;">ac urna.</span> Ut tincidunt vehicula risus. Nulla eget metu</p>
+        <ul class="plan-features">
+          <li>📦 100GB Storage</li>
+          <li>🧑🏻‍💻 10 Users</li>
+          <li>📞 24/7 Support</li>
+        </ul>
+        <div class = "button-c"><button class="plan-button" style="background-color: red;">Buy Now</button></div>
+        
+      </div>
+    </div>
+  </body>
+</html>
